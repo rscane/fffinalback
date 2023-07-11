@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/flaicon.ico">
+    <title>Contactanos</title>
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <a href="index.html" class="nav-logo-main">
+            <img src="img/logo.png" alt="Mascotas" class="nav-logo-main">
+            <h2 class="nombre-empresa">Furry Friends</h2>
+        </a>
+
+        <button class="button">
+            <svg class="svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                viewBox="0 0 30 30">
+                <path
+                    d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z">
+                </path>
+            </svg>
+        </button>
+
+        <nav class="nav">
+            <ul class="ul">
+                <li class="li"><a href="index.html" class="a">Home</a></li>
+                <div class="perro">
+                    <li class="li"><a href="perros.html" class="a">Perros</a></li>
+                    <div class="sub-item">
+                        <a href="perros.html#pequeño" class="a">Pequeños</a>
+                        <a href="perros.html#mediano" class="a">Medianos</a> 
+                       <a href="perros.html#grande" class="a">Grandes</a> 
+                    </div>
+                    </div>
+                <li class="li"><a href="gatos.html" class="a">Gatos</a></li>
+                <li class="li"><a href="shop.html" class="a">Pets Shop</a></li>
+                <li class="li"><a href="contactos.html" class="a">Contactanos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Bienvenido a Furry Friends</h1>
+        <br>
+        <h1>Contactanos</h1>
+
+        <form id="FormContacto" onsubmit="validarFormulario()">
+            <div class="inputFormulario">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" name="Nombre" placeholder="Cat Stevens" id="nombre">
+
+            </div>
+            <div class="inputFormulario">
+                <label for="email"> E-mail: </label>
+                <input type="email" name="email" placeholder="CatStevens@paw.com" id="email">
+
+            </div>
+            <div class="inputFormulario">
+                <label for="mensaje"> Mensaje:</label>
+                <textarea name="mensaje" id="mensaje"
+                    placeholder="Escribí tu mensaje/consulta/pedido aquí y te responderemos a la brevedad" cols="30"
+                    rows="10" maxlength="1500"></textarea>
+
+            </div>
+            <input type="submit" value="Enviar">
+
+        </form>
+        <div id="infoContacto">
+            <div>
+                <iframe id="mapaNos"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13138.673324136413!2d-58.4074765!3d-34.5872579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb953a57e69b%3A0x63fd2f8b0e03e89b!2sJuncal%20y%20Billinghurst!5e0!3m2!1ses-419!2sar!4v1684287964851!5m2!1ses-419!2sar"
+                    width="40wv" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="textoMapa">
+                <h2>Visitanos</h2>
+                <p>Si te encuentras en la Ciudad Autónoma de Buenos Aires, puedes coordinar una visita a nuestras
+                    oficinas, ubicadas en el Barrio de Palermo. Proximamente también podrás visitar nuestro <a href="shop.html"class="goTo"><button>Pet Shop</button></a>
+                </p></div>
+            </div>
+
+            <div class="mascotas-2">
+                <img src="img/Mascotas2a.png" class="mascotas-2" alt="tipos de mascotas">
+            </div>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <h1 class="h1">Furry Friends</h1>
+            </div>
+            <div class="box">
+                <h2>UNETE A NOSOTROS</h2>
+                <p>Si compartes el mismo sentimiento por nuestros compañeros inseparables?</p>
+                <p>Recuerda que somos una gran red de ayuda a nivel mundial...</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="fa-brands fa-facebook"></a>
+                    <a href="#" class="fa-brands fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-twitter"></a>
+                    <a href="#" class="fa-brands fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>Copyright &copy; 2023 <b>Codo a Codo 4.0 class 23008</b>Team of Web Designers Group 21 - Todos los
+                Derechos Reservados.</small>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

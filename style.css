@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Wix+Madefor+Display:wght@400;500&display=swap');
+
+/* Reset CSS - Reseteamos los margin y paddings de todas las etiquetas desactivando los estilos de los Navegadores */
+*{
+margin: 0;
+padding: 0;
+border: 0;
+box-sizing: border-box;
+vertical-align: baseline;
+}
+
+img , picture , video , iframe , figure {
+    max-width: 100%; /* Se evita el desbordamiento que las imagenes y videos sean más grande que la etiqueta contenedora*/
+    width: 100%; /* Para adecuar las imagenes más pequeñas, siempre se va adactar a la etiqueta contenedora*/
+    display: block; /*Resolvemos el problema de espacio de las imagenes*/
+    object-fit: cover;
+    object-position: center center;
+}
+
+/* Se resetean los enlaces para funcionar como cajas */
+a {
+    display: block; 
+}
+
+/* excepto los que se encuentran en párrafos */
+p a  {
+    display: inline; 
+}
+
+
+/* Quita los puntos de los <li> */
+li  {
+    list-style-type: none; 
+}
+
+
+/* Configuración de anclas suaves */
+html {
+    scroll-behavior: none; 
+}
+
+/* Se nivelan las tipografías y colocación de formularios */
+h1 , h2 , h3 , h4 , h5 , h6 , p , span , a , strong , blockquote , i , b , u , em {
+    font-size: 1em; /* Para que se adacte a la etiqueta de body*/
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: none;
+} 
+
+
+blockquote::before, blockquote::after, q:before, q:after {
+    content: '' ;
+    content: none;
+}
+
+::selection {
+    background-color: var(--clor-primario);
+    color: var(--color-secundario);
+}
+
+/* Se desactivan los estilos por defectos de las principales etiquitas de texto*/
+form , input , textarea , select , button , label {
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent; /* Se ponen todos los botones transparentes*/
+    display: block;
+    color: inherit;
+    appearance: none; /*Opcional*/
+}
+
+/* Reseteo de tablas */
+table , tr , td {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+/*Configuaración la tipografia para toda la web*/
+body {
+    min-height: 100vh;
+    font-size: 100%;
+    font-family: var(--tipo-principal);
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    line-height: 1.4;
+}
+
+/* Reset CSS - Reseteamos los margin y paddings de todas las etiquetas desactivando los estilos de los Navegadores */
+
+/*Codigo*/
+
+.header {
+    width: 100%; 
+    background-color: #19A7CE;
+    padding: .2em;
+
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/*Logo de la website*/
+.header .nav-logo-main {
+    width: 100px;
+    display: flex;
+    margin-left: 20px;
+}
+
+
+/* .header .a {
+    text-decoration: none;
+} */
+
+/* menú hamburguesa*/
+.header .button {
+    /* background-color: chartreuse; */
+    display: none;
+    color: aliceblue;
+}
+/* Ajuste del tamaño del menú homburguesa*/
+.header .svg {
+    width: 2.4em;
+    height: 2.4em;
+}
+
+/* .header .nav {
+    background-color: #146C94;
+    
+} */
+
+.header .ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+}
+
+
+.header .li {
+    margin: 30px 1.5em;
+}
+
+
+h1{
+    font-family: 'Boogaloo', cursive;
+    font-size: 3rem;
+    text-align: center;
+    color: #088395;
+    text-shadow: 2px 2px 30px #00FFCA; /* *Sirve para el bifuminado de la letra */
+}
+
+.nombre-empresa{
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.6rem;
+    color: #fff;
+    text-shadow: 0px 0px 5px #00FFCA; /* Sirve para el bifuminado de la letra */
+}
+
+h2{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.p1{
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Wix Madefor Display', sans-serif; */
+    font-size: 20px;
+    text-align: justify;
+    width: 80%; /* *El texto se mantiene a un 80% de la página*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p1::first-letter {
+    color: rgb(189, 90, 90);
+    font-size: xx-large;
+}
+
+.p2{
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 30px;
+    text-align: center ;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p3{
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Wix Madefor Display', sans-serif; */
+    font-size: 20px;
+    text-align: justify;
+    width: 80%; /* *El texto se mantiene a un 80% de la página*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Boogaloo', cursive;
+    font-size: 1.3em;
+    color: #fff;
+    text-shadow: 2px 2px 20px #00FFCA;
+}
+
+a:hover {
+    color: gray;
+}
+
+
+@media screen and (max-width:480px){
+
+    .header .button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .header .nav{
+        width: 100%;
+        /* display: none; */
+        height: 0;
+        overflow: hidden;
+        transition: all .5s ease;     
+    }
+
+    .header .nav.activo {
+        /* display: block; */
+        background-color: #146C94;
+        height: 40vh;
+    }
+
+
+    .header .ul{
+        flex-direction: column;
+    }
+
+    .header .li{
+        margin: 0.5rem 0;
+    }
+    .card {
+        min-width: 95%;
+    }
+
+}
+
+/*imagenes*/
+
+.mascotas-2{
+    width: 85%;
+    height: 40%;
+    margin: auto;
+}
+
+.mascotas-3{
+    width: 250px;
+    height: 50%;
+    margin: auto;
+    box-shadow: 0 0 20px #146C94;
+}
+
+.mascotas-4{
+    width: 650px;
+    height: 40%;
+    margin: auto;
+}
+
+/*footer*/
+
+.pie-pagina{
+    width: 100%;
+    background-color: #0A4D68;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 35px 0px;
+}
+.pie-pagina .grupo-1 .box h1{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: 'Nunito Sans', sans-serif; 
+    
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 5px;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: gray;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 10px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+
+/*main*/
+/*perros y gatos*/
+ main {
+    background: rgb(247, 245, 240)  url("img/fondo.png");
+  }
+  
+/*menus despegable en perros*/
+.perro {
+    display: inline-block;
+    position: relative; 
+}
+
+.sub-item {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    font-size: 10px;
+    text-align: center; 
+    background-color: #1f4162;
+}
+
+.perro:hover .sub-item {
+    display: block;
+}
+.sub-item a {
+    display: block; 
+    text-decoration: none;
+    padding: 10px 20px;
+    color:antiquewhite;
+}
+.sub-item a:hover {
+    color: antiquewhite;
+    background-color: #4094b5;
+    border-radius: 5px;
+} 
+
+/* informacion de perros y gatos*/
+.main h2 {
+    font-weight: bold;
+    color: #146C94;
+    text-align:center; 
+    
+    
+}
+
+.pets h2 {
+    text-align: center;
+    border: 2px;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+  
+.pets {
+    text-align: center;
+    padding: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 80%;
+    font-size: 20px;
+
+}
+  
+.pets p li {
+    font-size: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+  
+.lista-dato {
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: justify;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.dato {
+    line-height: 1.5;
+    list-style-type: none;
+}
+.dato:before {
+    content: "★";
+}
+
+/* cards de perros y gatos*/
+.mascotas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    margin: 50px;
+    width: 350px;
+    height: 300px;
+    border-radius: 7px;
+    background: var(--i);
+    background-size: cover;
+    box-shadow: 5px 8px 5px  rgba(3, 32, 51, .8);
+    cursor: pointer;
+}
+  
+.contenido {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(0, 0, 0, .5);
+    opacity: 0;
+    transition: 1s all;
+    overflow: hidden;
+    color:  lightgray;
+    margin: 0;
+    border-radius: 7px;
+ }
+  
+.contenido:hover h3 {
+    transform: scale(1.8);
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.contenido p{
+    font-size: 15px;
+    line-height: 1.2;
+    padding: 0 auto;
+    margin: 8px;
+    text-align: center; 
+    font-family: 'Nunito Sans', sans-serif; 
+    vertical-align: middle;
+}
+  
+.card:hover .contenido {
+    opacity: 2;
+    border-radius: 7px;
+}
+  
+
+/* formulario de contacto  */
+
+form {
+    max-width: 70vw;
+    max-height: 50%;
+    margin: 5% auto;
+    padding: 20px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray ;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray ;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#formInv {
+    max-width: 70vw;
+    max-height: 70%;
+    margin: 5% auto;
+    padding: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+}
+
+#mensaje {
+    height: 40%;
+}
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid gray ;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+::placeholder {
+    opacity: 0.5;
+    color: grey;
+    font-style: italic;  
+    position: absolute; 
+            
+}
+ 
+
+input[type="submit"] {
+    margin-left: 50%;
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 2px;
+    background-color: #146C94;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+input[type="submit"]:hover {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #00FFCA;
+    color: #fff
+}
+
+/* botones h ref del main*/
+
+.goTo button {
+ display: inline;
+  font-weight: 700;
+  color: #088395;
+  padding: 1px 10px;
+  background: #f4f6f0;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.goTo button:hover {
+  background-color: #088395;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+#mapaNos {
+    width: 1fr;
+    border: 2px solid gray ;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+#infoContacto {
+    display: flex;
+    max-width: 70vw;
+    max-height: 50%;
+    margin: 5% auto;
+    padding: 20px;
+    font-size: 1.1em;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    justify-content: space-evenly
+}
+#infoContacto div { 
+    width: 50%;
+    margin-left: 1%;
+    margin-bottom: 1%;
+
+}
+ 

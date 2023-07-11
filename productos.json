@@ -1,0 +1,43 @@
+[
+	{		
+		"id": 1,
+		"precio": 1500.50,
+		"title": "Buzo Canino",
+		"thumbnailUrl": "imgs/buzoCanino.jpg"
+	},
+
+	{		
+		"id": 2,
+		"precio": 5000.00,
+		"title": "Salchicama",
+		"thumbnailUrl": "imgs/SalchiCama.jpg"
+	},
+
+	{
+		"id": 3,
+		"precio": 1000.00,
+		"title": "Sweaters Canino",
+		"thumbnailUrl": "imgs/sweatersCanino.jpg"
+	},
+
+	{
+		"id": 4,
+		"precio": 1500.50,
+		"title": "Bufanda Gatuna",
+		"thumbnailUrl": "imgs/bufandaGatuna.jpg"
+	},
+	
+	{
+		"id": 5,
+		"precio": 2000.00,
+		"title": "Gorra RapCat",
+		"thumbnailUrl": "imgs/gorraGatosRapero.jpg"
+	},
+
+	{
+		"id": 6,
+		"precio": 950.50,
+		"title": "Sweaters Gatuno",
+		"thumbnailUrl": "imgs/sweaterGatuno.jpg"
+	}
+]
